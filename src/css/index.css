@@ -1,0 +1,399 @@
+/* GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Fuzzy+Bubbles:wght@700&display=swap");
+
+/* GOOGLE FONTS - V2 */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Abril+Fatface:400");
+
+/* CSS RESET */
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+/* ??? */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NEED TO STUDY */
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  display: inline-block;
+  /* border: transparent; */
+}
+
+body {
+  background-color: var(--bodyColour);
+  color: #eeeeee;
+}
+
+/* VARIABLES */
+:root {
+  /* FONTS */
+  --navbarFont: "Fuzzy Bubbles", cursive;
+  --mainFont: "Source Sans Pro", sans-serif;
+  --headerFont: "Abril Fatface", sans-serif;
+
+  /* WIDTH */
+  --maxWidth: 1140px;
+
+  /* TRANSITIONS */
+  --basicTransition: 0.3s ease-in-out all;
+
+  /* COLOURS */
+  --bodyColour: #222831;
+  --lighterBodyColour: #393e46;
+  --main-color: #00adb5;
+  --white: #eeeeee;
+  --dark: #191919;
+
+  /* BORDER RADIUS */
+  --borderRadius: 0.25rem;
+}
+
+/* ==========
+    TYPE SCALE TEMPLATE
+========== */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Abril+Fatface:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+/* ==========
+    NAVBAR
+========== */
+
+.navbar1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #393e46;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: var(--maxWidth);
+  font-family: var(--headerFont);
+}
+
+/* NAV HEADER */
+.nav-header {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  filter: invert(64%) sepia(87%) saturate(3462%) hue-rotate(143deg)
+    brightness(88%) contrast(101%);
+}
+
+.nav-header img {
+  width: 200px;
+}
+
+.nav-btn {
+  padding: 0.15rem 0.75rem;
+}
+
+.nav-btn i {
+  font-size: 1.5rem;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: var(--basicTransition);
+}
+
+.show-links {
+  height: 204px;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #00adb5;
+  text-decoration: none;
+  padding: 1rem 0;
+  border-top: 1px solid grey;
+  transition: var(--basicTransition);
+}
+
+.nav-link:hover {
+  color: #eeeeee;
+}
+
+/* MEDIA SCREEN FOR NAV BAR */
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 6rem;
+  }
+  .nav-center {
+    display: flex;
+  }
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-links {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-left: 2rem;
+  }
+}
+
+/* ==========
+    FOOTER
+========== */
+
+.page-footer {
+  background-color: aquamarine;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 2rem;
+}
+
+/* ==========
+   CARDS SECTION
+========== */
+
+.card-container {
+  width: var(--maxWidth);
+  width: 80vw;
+  margin: 2rem auto;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--dark);
+  padding: 2rem;
+  border-radius: var(--borderRadius);
+}
+
+.social-item {
+  margin-top: 0.5rem;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 125px;
+  margin: 0 auto;
+}
+
+.social-link {
+  color: var(--main-color);
+  opacity: 0.8;
+  font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  opacity: 1;
+}
+
+.profile-name {
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+.profile-name:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 3em;
+  background: var(--main-color);
+  margin: 0.125em auto;
+  opacity: 0.35;
+}
+
+.profile-position {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  color: var(--main-color);
+}
+
+.profile-body {
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+/* Profile IMG SIZE */
+.profile-img {
+  width: 125px;
+  height: 125px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+  .profile-main {
+    text-align: left;
+    margin-left: 2em;
+  }
+  .profile-name:after {
+    margin-left: 0;
+  }
+}
+
+/* ==========
+   useEffect SECTION
+========== */
+
+.main-container {
+  width: var(--maxWidth);
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.temporary-h3,
+.temporary-h5 {
+  margin: 0;
+  padding: 0.75rem 0;
+}
+
+.temporary-h3:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 3em;
+  background: var(--main-color);
+  margin: 0 auto;
+  margin-top: 0.5em;
+  opacity: 0.35;
+}
+
+.temporary-span {
+  color: var(--main-color);
+}
+
+#increase-value {
+  color: var(--white);
+}
+
+/* ==========
+   Quotes Section
+========== */
+
+.container {
+  width: var(--maxWidth);
+  width: 80vw;
+  margin: 1rem auto;
+  text-align: center;
+  max-width: 664px;
+  background-color: var(--dark);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.quote-of-the-day {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.quote-of-the-day:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 3em;
+  background: var(--main-color);
+  margin: 0 auto;
+  margin-top: 0.5em;
+  opacity: 0.35;
+}
