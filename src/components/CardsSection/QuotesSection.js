@@ -28,7 +28,7 @@ const QuotesSection = () => {
 
   return (
     <section>
-      <div className="container">
+      <div className="container" id="quote">
         <h3 className="quote-of-the-day">Quote of the day:</h3>
         <p>"{randomQuote1.text}"</p>
         <p>by {randomQuote1.author}</p>

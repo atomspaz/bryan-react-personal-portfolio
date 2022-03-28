@@ -24,14 +24,14 @@ const Navbar = () => {
           </button>
         </div>
         <div className={showNavbar ? "nav-links show-links" : "nav-links"}>
-          <a href="/#" className="nav-link">
-            tools
+          <a href="#about-me" className="nav-link">
+            About Me
           </a>
-          <a href="/#" className="nav-link">
-            portfolio
+          <a href="#quote" className="nav-link">
+            Quote of the day
           </a>
-          <a href="/#" className="nav-link">
-            contact
+          <a href="#technologies" className="nav-link">
+            Technologies
           </a>
         </div>
       </div>

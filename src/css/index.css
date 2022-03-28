@@ -1,14 +1,14 @@
-/* GOOGLE FONTS */
+/* GOOGLE FONTS - ROBOTO */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Fuzzy+Bubbles:wght@700&display=swap");
-
-/* GOOGLE FONTS - V2 */
+/* GOOGLE FONTS - SOURCE SANS PRO & ABRIL */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Abril+Fatface:400");
 
 /* CSS RESET */
 * {
   margin: 0px;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* ??? */
@@ -42,9 +42,9 @@ body {
 /* VARIABLES */
 :root {
   /* FONTS */
-  --navbarFont: "Fuzzy Bubbles", cursive;
+  --navbarFont: "Roboto", sans-serif;
   --mainFont: "Source Sans Pro", sans-serif;
-  --headerFont: "Abril Fatface", sans-serif;
+  --headerFont: "Roboto", sans-serif;
 
   /* WIDTH */
   --maxWidth: 1140px;
@@ -67,8 +67,6 @@ body {
     TYPE SCALE TEMPLATE
 ========== */
 
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Abril+Fatface:400");
-
 html {
   font-size: 100%;
 } /*16px*/
@@ -89,7 +87,7 @@ h3,
 h4,
 h5 {
   margin: 3rem 0 1.38rem;
-  font-family: "Abril Fatface", sans-serif;
+  font-family: var(--headerFont);
   font-weight: 400;
   line-height: 1.3;
 }
@@ -243,7 +241,7 @@ small,
 .card {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   width: 80%;
-  max-width: 600px;
+  max-width: 664px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -379,7 +377,6 @@ small,
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: var(--borderRadius);
   padding: 1rem;
-  box-sizing: border-box;
 }
 
 .quote-of-the-day {
@@ -396,4 +393,50 @@ small,
   margin: 0 auto;
   margin-top: 0.5em;
   opacity: 0.35;
+}
+
+/* ==========
+   Technologies Section
+========== */
+
+.technology-title {
+  margin-top: 0;
+}
+
+.technology-title:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 3em;
+  background: var(--main-color);
+  margin: 0.125em auto;
+  opacity: 0.35;
+}
+
+.technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.technologies-list > * {
+  flex-basis: 200px;
+  padding: 0.5rem;
+  background-color: var(--bodyColour);
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.technology-img {
+  width: 50px;
+  height: 50px;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+.technology-title-tag {
+  margin-block: auto;
+  text-transform: uppercase;
 }

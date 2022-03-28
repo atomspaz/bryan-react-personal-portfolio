@@ -5,7 +5,7 @@ import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const CardsSection = () => {
   return (
-    <section className="card-container">
+    <section className="card-container" id="about-me">
       <div className="card">
         <div className="profile-sidebar">
           <img src={profilePhoto} alt="" className="profile-img img" />
